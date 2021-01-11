@@ -1,0 +1,53 @@
+@charset "utf-8";
+$background-color: #fffefc;
+
+@import "~bulma/bulma.sass";
+@import "~bulma-timeline/dist/css/bulma-timeline.sass";
+
+html {
+  background-color: $background-color;
+}
+
+.navbar {
+  background-color: $background-color;
+}
+
+.footer {
+  background-color: $background-color;
+}
+
+.timeline-content {
+  .event {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .institution {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+}
+
+.skill-column {
+  margin: 0 30px;
+}
+
+.skill-list > li {
+  margin: 1.5em 0 0 0;
+}
+
+.skill-level {
+  float: right;
+}
+
+.project-card {
+  margin: 10px;
+  padding: 10px;
+  max-width: 33%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.19);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
