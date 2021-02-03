@@ -12,8 +12,8 @@ import { About } from '../components/About';
 import { Projects } from '../components/Projects';
 
 const IndexPage = () => (
-  <div className="container">
-    <SEO title="Home" />
+  <div className="container is-size-6">
+    {/*<SEO title="Home" />*/}
     <Header />
     <About />
     <Timeline />

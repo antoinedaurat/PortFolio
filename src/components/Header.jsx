@@ -13,10 +13,10 @@ const Header = () => (
             Timeline
           </Link>{' '}
           <Link to="#projects" className="navbar-item">
-            Projects
+            Highlights
           </Link>{' '}
           <Link to="#skills" className="navbar-item">
-            Skills
+            Coding Skills
           </Link>
         </div>
       </div>

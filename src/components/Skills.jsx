@@ -44,8 +44,10 @@ function SkillsList(props) {
 }
 
 export const Skills = () => (
-  <>
-    <h1 className="title has-text-centered">Skills</h1>
+  <div className="section">
+    <h1 className="title has-text-centered" id="skills">
+      Coding Skills
+    </h1>
     <div className="columns is-centered">
       <div className="column is-4 skill-column">
         <div className="has-text-centered">
@@ -96,5 +98,5 @@ export const Skills = () => (
         />
       </div>
     </div>
-  </>
+  </div>
 );

@@ -1,5 +1,5 @@
 @charset "utf-8";
-$background-color: #fffefc;
+$background-color: #fefefc;
 
 @import "~bulma/bulma.sass";
 @import "~bulma-timeline/dist/css/bulma-timeline.sass";
@@ -8,13 +8,25 @@ html {
   background-color: $background-color;
 }
 
-.navbar {
+header .navbar {
+  display: flex;
+  width: auto;
+  margin: 2em auto;
   background-color: $background-color;
+}
+
+.header {
+
 }
 
 .footer {
   background-color: $background-color;
 }
+
+//.timeline-item {
+//  margin-top: 2em;
+//  margin-bottom: 2em;
+//}
 
 .timeline-content {
   .event {
@@ -32,6 +44,10 @@ html {
   }
 }
 
+.column.is-4 {
+  flex: initial;
+}
+
 .skill-column {
   margin: 0 30px;
 }
@@ -44,10 +60,41 @@ html {
   float: right;
 }
 
+
 .project-card {
-  margin: 10px;
-  padding: 10px;
-  max-width: 33%;
+  margin-top: 2em;
+  //padding: 10px;
+  //width: 33%;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.19);
   border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 3% 3%;
+}
+
+.contact-icon {
+  vertical-align: bottom;
+  margin: 0 3px;
+  color: inherit;
+}
+
+.email-card {
+  z-index: 9999;
+  position: relative;
+  top: -16vh;
+  width: max-content;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.bg {
+  width: 100vw;
+  z-index: 9998;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
