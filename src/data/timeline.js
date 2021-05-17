@@ -7,27 +7,27 @@ export const content = [
     event: 'Lead Developer',
     description:
       'published an open-source package to enable musicians to easily train & use generative models' +
-      ' on their own audio files',
+      ' on their own audio files.',
     skills: ['python', 'torch', 'pytorch_lightning', 'h5py', 'librosa', 'pip', 'github'],
   },
   { type: 'year', year: '2020' },
   {
     type: 'position',
-    institution: 'k-tonal',
+    institution: 'ktonal',
     date: 'October 2020',
     event: 'Co-Founder',
-    description: 'k-tonal is a collective of composers at the mid-point between AI research and experimental music',
+    description: 'ktonal is a collective of composers at the mid-point between AI research and experimental music.',
     skills: ['generative models', 'music information extraction', 'contemporary music'],
   },
   { type: 'year', year: '2020' },
   {
     type: 'position',
     institution: 'freknet package',
-    date: '2020',
+    date: 'Summer 2020',
     event: 'Developer - Researcher',
     description:
       'researched and implemented generative models for audio data which later became the freknet package' +
-      ' within mimikit',
+      ' within mimikit.',
     skills: ['python', 'torch', 'pytorch_lightning', 'generative models', 'signal processing'],
   },
   { type: 'year', year: '2019' },

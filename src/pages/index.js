@@ -3,8 +3,7 @@ import { Link } from 'gatsby';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import SEO from '../components/seo';
-
+import {Rainbow} from '../components/Rainbow'
 import '../main.scss';
 import { Skills } from '../components/Skills';
 import { Timeline } from '../components/Timeline';
@@ -16,6 +15,7 @@ const IndexPage = () => (
     {/*<SEO title="Home" />*/}
     <Header />
     <About />
+    {/*<Rainbow/>*/}
     <Timeline />
     <Projects />
     <Skills />

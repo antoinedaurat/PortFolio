@@ -7,7 +7,7 @@ function renderTags(tags) {
   return (
     <div className="tags are-small">
       {tags.map(tag => (
-        <span className="tag is-medium" key={tag}>
+        <span className="tag is-samll" key={tag}>
           {tag}
         </span>
       ))}
@@ -19,14 +19,16 @@ function renderItems(items) {
   return items.map((item, index) => {
     if (item.type === 'year') {
       return (
-        <header className="timeline-header" key={index}>
+        <div className="timeline-header" key={index}>
           <span className="tag is-large">{item.year}</span>
-        </header>
+        </div>
       );
     }
     return (
       <div key={index}>
+        {/* placeholder */}
         <div className="timeline-item" />
+        {/* Item */}
         <div className="timeline-item">
           <div className="timeline-marker is-32x32" />
           <div className="timeline-content">
@@ -37,6 +39,7 @@ function renderItems(items) {
             {renderTags(item.skills)}
           </div>
         </div>
+        {/* Placeholder */}
         <div className="timeline-item" />
       </div>
     );

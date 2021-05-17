@@ -1,18 +1,23 @@
 @charset "utf-8";
-$background-color: #fefefc;
+$white: #ffffff;
+$black: #4a4a4a;
+$blue: #0058ce;
+
 
 @import "~bulma/bulma.sass";
 @import "~bulma-timeline/dist/css/bulma-timeline.sass";
 
 html {
-  background-color: $background-color;
+  background: $white;
+  color: $black;
 }
 
 header .navbar {
   display: flex;
   width: auto;
   margin: 2em auto;
-  background-color: $background-color;
+  background-color: $white;
+  //font-: $foreground-color;
 }
 
 .header {
@@ -20,15 +25,41 @@ header .navbar {
 }
 
 .footer {
-  background-color: $background-color;
+  background-color: $white;
 }
 
-//.timeline-item {
-//  margin-top: 2em;
-//  margin-bottom: 2em;
-//}
+.timeline {
+
+  .timeline-header span {
+    color: $white;
+    background: $black;
+  }
+
+  .timeline-item:before {
+    background-color: $black;
+
+  }
+
+  .timeline-item {
+    .timeline-marker {
+      top: 1.75rem;
+      background: $black;
+      border: 0;
+    }
+  }
+}
 
 .timeline-content {
+  p {
+    margin: 1em 0;
+  }
+
+  .date {
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   .event {
     font-size: 1.25rem;
     font-weight: bold;
@@ -39,9 +70,22 @@ header .navbar {
     font-weight: bold;
   }
 
-  .date {
-    font-size: 1.25rem;
+  //.description {}
+
+  .tag {
+    color: $white;
+    background: $black;
   }
+}
+
+.thumbnail-container {
+  display: flex;
+}
+
+.project-thumbnail {
+  //width: 300px;
+  height: 200px;
+  margin: 0 auto 2em auto;
 }
 
 .column.is-4 {
@@ -60,6 +104,17 @@ header .navbar {
   float: right;
 }
 
+.progress::-moz-progress-bar {
+  background-color: $black;
+}
+
+.progress::-webkit-progress-value {
+  background-color: $black;
+}
+
+.progress {
+  color: $black;
+}
 
 .project-card {
   margin-top: 2em;
