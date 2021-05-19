@@ -15,6 +15,7 @@ const IndexPage = () => (
         <Helmet>
             <title>Antoine Daurat</title>
             <meta name="description" content="Antoine Daurat -- Personal Portfolio"/>
+            <link rel='image_src' href='/portfolio-screenshot.png'/>
         </Helmet>
         <div className="container is-size-6">
             {/*<SEO title="Home" />*/}
